@@ -1,0 +1,165 @@
+﻿<Page x:Class="WpfLCC.Page6"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfLCC"
+      xmlns:winformchart="clr-namespace:System.Windows.Forms.DataVisualization.Charting;assembly=System.Windows.Forms.DataVisualization"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="Page6">
+
+    <Grid Background="White">
+        <Grid Background="White">
+            <Rectangle Fill="#FFF0F0F0" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="1280"/>
+            <Grid HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="116" Margin="1134,0,0,0" Background="#FFA8A8A8" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="도움말" VerticalAlignment="Top" Margin="54,13,0,0" Foreground="White" RenderTransformOrigin="-0.656,1.3" FontSize="16" Width="52" FontWeight="Bold"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="752" Margin="498,70,0,0">
+                <Grid HorizontalAlignment="Left" Height="45" Margin="561,0,0,0" VerticalAlignment="Top" Width="167" Background="White">
+                    <TextBlock HorizontalAlignment="Left" Margin="61,7,0,0" TextWrapping="Wrap" Text="지열" VerticalAlignment="Top" FontSize="22" Foreground="#FFA2A2A2"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="45" Margin="734,0,0,0" VerticalAlignment="Top" Width="3" Background="#FFBDBDBD"/>
+                <Grid HorizontalAlignment="Left" Height="45" Margin="380,0,0,0" VerticalAlignment="Top" Width="167" Background="White">
+                    <TextBlock HorizontalAlignment="Left" Margin="41,7,0,0" TextWrapping="Wrap" Text="연료전지" VerticalAlignment="Top" FontSize="22" Foreground="#FFA2A2A2"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="45" Margin="553,0,0,0" VerticalAlignment="Top" Width="3" Background="#FFBDBDBD"/>
+                <Grid HorizontalAlignment="Left" Height="45" Margin="199,0,0,0" VerticalAlignment="Top" Width="167" Background="White">
+                    <TextBlock HorizontalAlignment="Left" Margin="53,7,0,0" TextWrapping="Wrap" Text="태양열" VerticalAlignment="Top" FontSize="22" Foreground="#FFA2A2A2"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="45" Margin="372,0,0,0" VerticalAlignment="Top" Width="3" Background="#FFBDBDBD"/>
+                <Grid HorizontalAlignment="Left" Height="45" Margin="18,0,0,0" VerticalAlignment="Top" Width="167" Background="#FF185B83">
+                    <TextBlock HorizontalAlignment="Left" Margin="53,7,0,0" TextWrapping="Wrap" Text="태양광" VerticalAlignment="Top" FontSize="22" Foreground="White"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="45" Margin="191,0,0,0" VerticalAlignment="Top" Width="3" Background="#FFBDBDBD"/>
+                <Grid HorizontalAlignment="Left" Height="45" Margin="10,0,0,0" VerticalAlignment="Top" Width="3" Background="#FFBDBDBD"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="451" Margin="10,48,0,0" VerticalAlignment="Top" Width="229">
+                <Image HorizontalAlignment="Left" Height="108" VerticalAlignment="Top" Width="219" Margin="10,10,0,0" Source="folder/img2.png" Stretch="Fill"/>
+                <Grid HorizontalAlignment="Left" Height="45" Margin="10,131,0,0" VerticalAlignment="Top" Width="219" Background="White">
+                    <TextBlock HorizontalAlignment="Left" Margin="13,7,0,0" TextWrapping="Wrap" Text="설비 정보" VerticalAlignment="Top" FontSize="20" Foreground="#FFA2A2A2" Width="133"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="3" Margin="10,123,0,0" VerticalAlignment="Top" Width="219" Background="#FF185B83"/>
+                <Grid HorizontalAlignment="Left" Height="1" Margin="10,182,0,0" VerticalAlignment="Top" Width="219" Background="#FFBDBDBD"/>
+                <Grid HorizontalAlignment="Left" Height="45" Margin="10,189,0,0" VerticalAlignment="Top" Width="219" Background="White">
+                    <TextBlock HorizontalAlignment="Left" Margin="13,7,0,0" TextWrapping="Wrap" Text="운전 정보" VerticalAlignment="Top" FontSize="20" Foreground="#FFA2A2A2" Width="133"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="1" Margin="10,240,0,0" VerticalAlignment="Top" Width="219" Background="#FFBDBDBD"/>
+                <Grid HorizontalAlignment="Left" Height="45" Margin="10,247,0,0" VerticalAlignment="Top" Width="219" Background="White">
+                    <TextBlock HorizontalAlignment="Left" Margin="13,7,0,0" TextWrapping="Wrap" Text="성능 및 유지관리" VerticalAlignment="Top" FontSize="20" Foreground="#FFA2A2A2" Width="176"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="1" Margin="10,298,0,0" VerticalAlignment="Top" Width="219" Background="#FFBDBDBD"/>
+                <Grid HorizontalAlignment="Left" Height="45" Margin="10,305,0,0" VerticalAlignment="Top" Width="219" Background="#FF185B83">
+                    <TextBlock HorizontalAlignment="Left" Margin="13,7,0,0" TextWrapping="Wrap" Text="분석" VerticalAlignment="Top" FontSize="20" Foreground="White" Width="133"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="3" Margin="10,355,0,0" VerticalAlignment="Top" Width="219" Background="#FF185B83"/>
+            </Grid>
+            <Rectangle Fill="White" HorizontalAlignment="Left" Height="36" Margin="951,641,0,0" Stroke="Black" VerticalAlignment="Top" Width="127" MouseLeftButtonDown="preBtn"/>
+            <TextBlock HorizontalAlignment="Left" Margin="989,650,0,0" TextWrapping="Wrap" Text="&lt;&lt; 이전" VerticalAlignment="Top" FontSize="14" MouseLeftButtonDown="preBtn"/>
+            <Rectangle Fill="White" HorizontalAlignment="Left" Height="36" Margin="1108,641,0,0" Stroke="Black" VerticalAlignment="Top" Width="127" MouseLeftButtonDown="postBtn"/>
+            <TextBlock HorizontalAlignment="Left" Margin="1142,650,0,0" TextWrapping="Wrap" Text="결과 출력" VerticalAlignment="Top" FontSize="14" MouseLeftButtonDown="postBtn"/>
+            <Grid HorizontalAlignment="Left" Height="38" Margin="31,5,0,0" VerticalAlignment="Top" Width="143" Background="#FF6E6873" MouseLeftButtonDown="Grid_MouseLeftButtonDown_1">
+                <TextBlock HorizontalAlignment="Left" Margin="10,3,0,0" TextWrapping="Wrap" Text="New Project" VerticalAlignment="Top" FontSize="22" Foreground="White" Width="123"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="38" Margin="179,5,0,0" VerticalAlignment="Top" Width="143" Background="#FF6E6873" MouseLeftButtonDown="Grid_MouseLeftButtonDown_3">
+                <TextBlock HorizontalAlignment="Left" Margin="41,3,0,0" TextWrapping="Wrap" Text="Open" VerticalAlignment="Top" FontSize="22" Foreground="White" Width="92"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="38" Margin="327,5,0,0" VerticalAlignment="Top" Width="143" Background="#FF6E6873" MouseLeftButtonDown="Grid_MouseLeftButtonDown_2">
+                <TextBlock HorizontalAlignment="Left" Margin="48,3,0,0" TextWrapping="Wrap" Text="Save" VerticalAlignment="Top" FontSize="22" Foreground="White" Width="85"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="38" Margin="475,5,0,0" VerticalAlignment="Top" Width="143" Background="#FF6E6873" MouseLeftButtonDown="Grid_MouseLeftButtonDown_4">
+                <TextBlock HorizontalAlignment="Left" Margin="35,3,0,0" TextWrapping="Wrap" Text="Save as" VerticalAlignment="Top" FontSize="22" Foreground="White" Width="98"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="513" VerticalAlignment="Top" Width="962" Margin="276,123,0,0" Background="White">
+                <Grid HorizontalAlignment="Left" Height="457" VerticalAlignment="Top" Width="954" Background="#FFEAEAEA" Margin="10,56,-2,0">
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="패널 효율 변화" VerticalAlignment="Top" Margin="170,236,0,0" FontSize="18" Foreground="#FF666666"/>
+                    <Grid HorizontalAlignment="Left" Height="59" Margin="10,2,0,0" VerticalAlignment="Top" Width="934" Background="White">
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="기기 설정" VerticalAlignment="Top" Margin="31,3,0,0" FontSize="18" Foreground="#FF2D739D" FontWeight="Bold" Height="24"/>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="유지관리 설정" VerticalAlignment="Top" Margin="31,32,0,0" FontSize="18" Foreground="#FF2D739D" FontWeight="Bold"/>
+                        <Button x:Name="btn1" Content="기기 1" HorizontalAlignment="Left" Margin="237,3,0,0" VerticalAlignment="Top" Width="98" Height="24" Background="#FF83C1DC" BorderBrush="#FF83C1DC" FontSize="16" Foreground="White" Click="btn1_Click"/>
+                        <Button x:Name="btn2" Content="기기 2" HorizontalAlignment="Left" Margin="367,3,0,0" VerticalAlignment="Top" Width="98" Height="24" Background="#FF83C1DC" BorderBrush="#FF83C1DC" FontSize="16" Foreground="White" Click="btn2_Click"/>
+                        <Button x:Name="btn3" Content="기기 3" HorizontalAlignment="Left" Margin="497,3,0,0" VerticalAlignment="Top" Width="98" Height="24" Background="#FF83C1DC" BorderBrush="#FF83C1DC" FontSize="16" Foreground="White" Click="btn3_Click"/>
+                        <Button x:Name="btn4" Content="기기 4" HorizontalAlignment="Left" Margin="627,3,0,0" VerticalAlignment="Top" Width="98" Height="24" Background="#FF83C1DC" BorderBrush="#FF83C1DC" FontSize="16" Foreground="White" Click="btn4_Click"/>
+                        <Button x:Name="btn5" Content="기기 5" HorizontalAlignment="Left" Margin="757,3,0,0" VerticalAlignment="Top" Width="98" Height="24" Background="#FF83C1DC" BorderBrush="#FF83C1DC" FontSize="16" Foreground="White" Click="btn5_Click"/>
+                        <Button x:Name="btn6" Content="관리 1" HorizontalAlignment="Left" Margin="237,32,0,0" VerticalAlignment="Top" Width="98" Height="24" Background="#FF83C1DC" BorderBrush="#FF83C1DC" FontSize="16" Foreground="White" Click="btn6_Click"/>
+                        <Button x:Name="btn7" Content="관리 2" HorizontalAlignment="Left" Margin="367,32,0,0" VerticalAlignment="Top" Width="98" Height="24" Background="#FF83C1DC" BorderBrush="#FF83C1DC" FontSize="16" Foreground="White" Click="btn7_Click"/>
+                        <Button x:Name="btn8" Content="관리 3" HorizontalAlignment="Left" Margin="497,32,0,0" VerticalAlignment="Top" Width="98" Height="24" Background="#FF83C1DC" BorderBrush="#FF83C1DC" FontSize="16" Foreground="White" Click="btn8_Click"/>
+                        <Button x:Name="btn9" Content="관리 4" HorizontalAlignment="Left" Margin="627,32,0,0" VerticalAlignment="Top" Width="98" Height="24" Background="#FF83C1DC" BorderBrush="#FF83C1DC" FontSize="16" Foreground="White" Click="btn9_Click"/>
+                        <Button x:Name="btn10" Content="관리 5" HorizontalAlignment="Left" Margin="757,32,0,0" VerticalAlignment="Top" Width="98" Height="24" Background="#FF83C1DC" BorderBrush="#FF83C1DC" FontSize="16" Foreground="White" Click="btn10_Click"/>
+                    </Grid>
+                    <Grid HorizontalAlignment="Left" Height="173" Margin="10,64,0,0" VerticalAlignment="Top" Width="443" Background="White">
+                        <WindowsFormsHost x:Name="host1" Margin="0">
+                            <winformchart:Chart x:Name="MyWinformChart1" Dock="Fill">
+                                <winformchart:Chart.Series>
+                                    <winformchart:Series Name="series1" ChartType="Line"/>
+                                    <winformchart:Series Name="series2" ChartType="Line"/>
+                                    <winformchart:Series Name="series3" ChartType="Line"/>
+                                    <winformchart:Series Name="series4" ChartType="Line"/>
+                                    <winformchart:Series Name="series5" ChartType="Line"/>
+                                </winformchart:Chart.Series>
+                                <winformchart:Chart.ChartAreas>
+                                    <winformchart:ChartArea/>
+                                </winformchart:Chart.ChartAreas>
+                            </winformchart:Chart>
+                        </WindowsFormsHost>
+                    </Grid>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="연간 LCC 변화" VerticalAlignment="Top" Margin="175,433,0,0" FontSize="18" Foreground="#FF666666"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="인버터 효율 변화" VerticalAlignment="Top" Margin="653,236,0,0" FontSize="18" Foreground="#FF666666"/>
+                    <Grid HorizontalAlignment="Left" Height="173" Margin="501,64,0,0" VerticalAlignment="Top" Width="443" Background="White">
+                        <WindowsFormsHost x:Name="host2" Margin="0">
+                            <winformchart:Chart x:Name="MyWinformChart2" Dock="Fill">
+                                <winformchart:Chart.Series>
+                                    <winformchart:Series Name="series1" ChartType="Line"/>
+                                    <winformchart:Series Name="series2" ChartType="Line"/>
+                                    <winformchart:Series Name="series3" ChartType="Line"/>
+                                    <winformchart:Series Name="series4" ChartType="Line"/>
+                                    <winformchart:Series Name="series5" ChartType="Line"/>
+                                </winformchart:Chart.Series>
+                                <winformchart:Chart.ChartAreas>
+                                    <winformchart:ChartArea/>
+                                </winformchart:Chart.ChartAreas>
+                            </winformchart:Chart>
+                        </WindowsFormsHost>
+                    </Grid>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="총 LCC 정보" VerticalAlignment="Top" Margin="674,433,0,0" FontSize="18" Foreground="#FF666666"/>
+                    <Grid HorizontalAlignment="Left" Height="173" Margin="10,260,0,0" VerticalAlignment="Top" Width="443" Background="White">
+                        <WindowsFormsHost x:Name="host3" Margin="0">
+                            <winformchart:Chart x:Name="MyWinformChart3" Dock="Fill">
+                                <winformchart:Chart.Series>
+                                    <winformchart:Series Name="series1" ChartType="Line"/>
+                                    <winformchart:Series Name="series2" ChartType="Line"/>
+                                    <winformchart:Series Name="series3" ChartType="Line"/>
+                                    <winformchart:Series Name="series4" ChartType="Line"/>
+                                    <winformchart:Series Name="series5" ChartType="Line"/>
+                                </winformchart:Chart.Series>
+                                <winformchart:Chart.ChartAreas>
+                                    <winformchart:ChartArea/>
+                                </winformchart:Chart.ChartAreas>
+                            </winformchart:Chart>
+                        </WindowsFormsHost>
+                    </Grid>
+                    <Grid HorizontalAlignment="Left" Height="173" Margin="501,260,0,0" VerticalAlignment="Top" Width="443" Background="White">
+                        <WindowsFormsHost x:Name="host4" Margin="0">
+                            <winformchart:Chart x:Name="MyWinformChart4" Dock="Fill">
+                                <winformchart:Chart.Series>
+                                    <winformchart:Series Name="series1" ChartType="Line"/>
+                                    <winformchart:Series Name="series2" ChartType="Line"/>
+                                    <winformchart:Series Name="series3" ChartType="Line"/>
+                                    <winformchart:Series Name="series4" ChartType="Line"/>
+                                    <winformchart:Series Name="series5" ChartType="Line"/>
+                                </winformchart:Chart.Series>
+                                <winformchart:Chart.ChartAreas>
+                                    <winformchart:ChartArea/>
+                                </winformchart:Chart.ChartAreas>
+                            </winformchart:Chart>
+                        </WindowsFormsHost>
+                    </Grid>
+                </Grid>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="분석 결과" VerticalAlignment="Top" Margin="10,10,0,0" FontSize="22" Foreground="#FF2D739D" FontWeight="Bold"/>
+                <Grid HorizontalAlignment="Left" Height="3" Margin="10,48,0,0" VerticalAlignment="Top" Width="952" Background="#FFBDBDBD"/>
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+</Page>
